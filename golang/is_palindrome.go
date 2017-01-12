@@ -41,11 +41,15 @@ func isPalindrome(x int) bool {
 		flag = false
 	}
 
+	if x < 0 {
+		flag = false
+	}
+
 	return flag
 }
 
 func main() {
-	test := 12321
+	test := -1221
 	flag := isPalindrome(test)
 	fmt.Println(flag)
 }
